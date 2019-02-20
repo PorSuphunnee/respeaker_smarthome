@@ -1,7 +1,9 @@
--nfilt 40
--lowerf 133.3334
--upperf 6855.4976
--feat s2_4x
+-lowerf 130
+-upperf 6800
+-nfilt 25
+-transform dct
+-lifter 22
+-feat 1s_c_d_dd
 -agc none
+-cmn batch
 -varnorm no
--cmninit 8,0,0
