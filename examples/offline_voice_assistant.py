@@ -26,8 +26,8 @@ def task(quit_event):
     mic = Microphone(quit_event=quit_event)
 
     while not quit_event.is_set():
-        if mic.wakeup('satja'):
-            print('Wake up por')
+        if mic.wakeup('respeaker'):
+            print('Wake up')
             data = mic.listen()
             text = mic.recognize(data)
             if text:
